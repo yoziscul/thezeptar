@@ -1,0 +1,23 @@
+{
+    "short_name": "Ziscul",
+    "name": "Ziscul's Portofolio Homepage",
+    "description": "A portofolio about a random developer named Ziscul.",
+    "icons": [
+        {
+            "src": "/images/avatar-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "/images/avatar-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ],
+    "background_color": "#000000",
+    "theme_color": "#1e033b",
+    "display": "standalone",
+    "start_url": "/#"
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ziscul.js.cool/sitemap-index.xml

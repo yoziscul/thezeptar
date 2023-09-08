@@ -1,0 +1,97 @@
+---
+import Navbar from '../components/Navbar.jsx';
+
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Ziscul" />
+        <meta name="keywords" content="Ziscul, Portofolio, Homepage" />
+        <meta name="abstract" content="Ziscul's Portofolio Homepage" />
+        <meta name="theme-color" content="#1e1233" />
+        <meta name="description" content="Ziscul's Portofolio Homepage" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="/images/banner.png" />
+        <meta property="og:image:alt" content="Ziscul" />
+        <meta property="og:image:width" content="2500px" />
+        <meta property="og:image:height" content="750px" />
+
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="manifest" crossorigin="use-credentials" href="/site.webmanifest" />
+        <link rel="canonical" href="https://ziscul.vercel.app/#" />
+
+        <title>{title} — Ziscul</title>
+    </head>
+    <body>
+        <main class="master h-screen w-full">
+            <Navbar client:idle />
+            <slot />
+        </main>
+    </body>
+</html>
+<style is:global>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    ::selection {
+        color: white;
+        background: rgba(111, 0, 255, 0.451);
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.7em;
+        overflow-x: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #242942;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #00c6ff;
+    }
+
+    @font-face {
+        font-family: 'TheBoldFont';
+        src: url('/fonts/The Bold Font/theboldfont-webfont.woff2') format('woff2'), url('/fonts/The Bold Font/theboldfont-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Rubik';
+        src: url('/fonts/Rubik/rubik-regular-webfont.woff2') format('woff2'), url('/fonts/Rubik/rubik-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Raleway';
+        src: url('/fonts/Raleway/Raleway-ExtraLight.woff2') format('woff2'), url('/fonts/Raleway/Raleway-ExtraLight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+</style>
