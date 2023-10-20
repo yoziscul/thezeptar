@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 
 export default defineConfig({
-    site: 'https://ziscul.js.cool',
+    site: 'https://zeptar.js.cool',
     output: 'server',
     integrations: [serviceWorker(), react(), tailwind(), sitemap(), compress()],
     adapter: vercel(),

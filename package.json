@@ -1,9 +1,10 @@
 {
-    "name": "zepvil",
+    "name": "thezeptar",
     "type": "module",
     "version": "1.0.0",
     "scripts": {
         "start": "astro dev",
+        "build": "astro build",
         "check": "prettier . --check",
         "write": "prettier . --write"
     },

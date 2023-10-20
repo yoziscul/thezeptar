@@ -6,7 +6,7 @@ import About from '../components/About.astro';
 
 <Layout title="Home">
     <main class="w-full min-h-screen">
-        <header style="background: linear-gradient(to bottom, #022840, #02141f); height: 69vh;">
+        <header class="header">
             <Header />
         </header>
         <section id="about">
@@ -14,3 +14,9 @@ import About from '../components/About.astro';
         </section>
     </main>
 </Layout>
+<style>
+    .header {
+        height: 69vh;
+        background-image: linear-gradient(to bottom, #022840, #02141f);
+    }
+</style>
