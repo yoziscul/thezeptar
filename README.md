@@ -1,7 +1,6 @@
-<br />
 <div align="center">
     <p>
-        <a href="https://zeptar.js.cool"><img src="./assets/zeptar.png" width="400px" /></a>
+        <a href="https://zeptar.js.cool"><img src="./assets/zeptar.png" width="500px" /></a>
     </p>
     <p>
         <a href="https://youtube.com/@thezeptar"><img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
