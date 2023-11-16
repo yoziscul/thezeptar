@@ -9,27 +9,33 @@
         <br />
         <a href="https://github.com/Zepvil"><img src="https://komarev.com/ghpvc/?username=Zepvil&color=00469c&style=for-the-badge&label=Profile%20Views" alt="Profile Views" /></a>
     </p>
-</div>
 
 ---
 
 ###### ⭐ About Me
 
-I've been a full-stack developer for about 2 years. My primary tools of choice include Node.js, JavaScript, Astro, and TypeScript. My current learning journey is centered on acquiring proficiency in the C programming language. At present, my work revolves around several small projects:
+```yaml
+> thezeptar
+```
 
-- [Cognifyr][cognifyr] (archived)
-- [Spud.js][spudjs]
-- [Ambush][ambush]
-- [Portofolio][zeptar]
+I've been a full-stack developer for about 2 years. My primary tools of choice include Node.js, JavaScript, Astro, and TypeScript. My current learning journey is centered on acquiring proficiency in the C programming language.
 
 ---
 
-<div align="center">
-    <h6>⚡ Tools / Apps</h6>
-    <img src="./assets/tools.svg" alt="Tools" />
-</div>
+###### ⚡ Tools / Apps
 
-[cognifyr]: https://github.com/thezeptar/cognifyr
-[spudjs]: https://github.com/keita-sama/spud.js
-[ambush]: https://npmjs.com/package/ambush
-[zeptar]: https://zeptar.js.cool
+![Tools](./assets/tools.svg)
+
+---
+
+##### 🚀 Projects
+
+<div id="projects">
+        <img width="47px" src="./assets/cognifyr.png" alt="Cognifyr"></img>
+        <a href="https://github.com/thezeptar/thezeptar"><img width="47px" src="./assets/portfolio.png" alt="Portfolio"></img></a>
+        <a href="https://github.com/keita-sama/spud.js"><img width="47px" src="./assets/spud.js.png" alt="Spud.js"><img></a>
+        <a href="https://github.com/ambushjs/ambush"><img width="47px" src="./assets/ambush.png" alt="Ambush"></img></a>
+        <a href="https://github.com/ambushjs/image"><img width="47px" src="./assets/image.png" alt="image"></img></a>
+        <a href="https://github.com/ambushjs/bot"><img width="47px" src="./assets/bot.png" alt="bot"></img></a>
+    </div>
+</div>
