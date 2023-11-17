@@ -12,17 +12,13 @@
 
 ---
 
-###### ⭐ About Me
-
-```yaml
-> thezeptar
-```
+##### ⭐ About Me
 
 I've been a full-stack developer for about 2 years. My primary tools of choice include Node.js, JavaScript, Astro, and TypeScript. My current learning journey is centered on acquiring proficiency in the C programming language.
 
 ---
 
-###### ⚡ Tools / Apps
+##### ⚡ Tools / Apps
 
 ![Tools](./assets/tools.svg)
 
@@ -32,10 +28,15 @@ I've been a full-stack developer for about 2 years. My primary tools of choice i
 
 <div id="projects">
         <img width="47px" src="./assets/cognifyr.png" alt="Cognifyr"></img>
+        &nbsp;
         <a href="https://github.com/thezeptar/thezeptar"><img width="47px" src="./assets/portfolio.png" alt="Portfolio"></img></a>
+        &nbsp;
         <a href="https://github.com/keita-sama/spud.js"><img width="47px" src="./assets/spud.js.png" alt="Spud.js"><img></a>
+        &nbsp;
         <a href="https://github.com/ambushjs/ambush"><img width="47px" src="./assets/ambush.png" alt="Ambush"></img></a>
+        &nbsp;
         <a href="https://github.com/ambushjs/image"><img width="47px" src="./assets/image.png" alt="image"></img></a>
+        &nbsp;
         <a href="https://github.com/ambushjs/bot"><img width="47px" src="./assets/bot.png" alt="bot"></img></a>
     </div>
 </div>

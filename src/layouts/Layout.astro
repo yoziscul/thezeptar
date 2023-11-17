@@ -1,6 +1,4 @@
 ---
-import Navbar from '../components/Navbar.jsx';
-
 export interface Props {
     title: string;
 }
@@ -35,81 +33,19 @@ const { title } = Astro.props;
     </head>
     <body>
         <main class="h-screen w-full">
-            <div id="bar"></div>
-
-            <Navbar client:load />
             <slot />
         </main>
-        <script async>
-            window.onscroll = function onscroll() {
-                const scrollPercent = (window.scrollY / (Math.max(document.body.scrollHeight, document.documentElement.scrollHeight) - window.innerHeight ?? document.documentElement.clientHeight)) * 100;
-                const bar = document.getElementById('bar');
-
-                scrollPercent > 98 ? (bar.style.height = '105%') : (bar.style.height = `${scrollPercent}%`);
-            };
-        </script>
     </body>
 </html>
 <style is:global>
-    * {
-        padding: 0;
-        font-family: 'Rubik', sans-serif;
-    }
-
     html {
         scroll-behavior: smooth;
-    }
-
-    body {
-        overflow-x: hidden;
-        max-width: 100%;
-    }
-
-    #bar {
-        z-index: 100;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 13px;
-        border-bottom-left-radius: 25px;
-        background: linear-gradient(to top, #45a0fc, #ed45fc, #fcb045);
+        font-family: 'Raleway', sans-serif;
     }
 
     ::selection {
         color: white;
         background: rgba(111, 0, 255, 0.451);
-    }
-
-    ::-webkit-scrollbar {
-        width: 0;
-    }
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-    @font-face {
-        font-family: 'TheBoldFont';
-        src: url('/fonts/The Bold Font/theboldfont-webfont.woff2') format('woff2'), url('/fonts/The Bold Font/theboldfont-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'Rubik';
-        src: url('/fonts/Rubik/rubik-regular-webfont.woff2') format('woff2'), url('/fonts/Rubik/rubik-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
     }
 
     @font-face {
