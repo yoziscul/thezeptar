@@ -1,11 +1,11 @@
-<section id="contact" class="min-h-screen flex justify-center items-center relative z-10 bg-[#0c2957] px-[100px] py-[50px] flex-col">
-    <div class="max-w-[800px] text-center text-white mb-[15px]">
-        <h1 class="text-5xl font-medium">Contact Me</h1>
+<section id="contact" class="min-h-screen flex justify-center items-center relative z-10 bg-gradient-to-r from-[#090947] to-[#293240] p-[50px] flex-col">
+    <div class="text-center text-white mb-[15px]">
+        <h1 class="text-5xl font-bold">Contact Me</h1>
         <p class="font-light mt-[15px]">Feel free to ask if you have any problems or questions, or you can ask me on Discord, Email or GitHub.</p>
     </div>
 
-    <div class="w-full flex justify-center items-center mt-[30px]">
-        <div class="w-6/12 flex-col">
+    <div class="w-full flex justify-center items-center mt-[30px] max-[991px]:flex-col">
+        <div class="w-6/12 flex flex-col">
             <div class="box">
                 <div class="icon !text-[27px]">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 520">
@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="text">
-                    <h3>GitHub</h3>
+                    <h1>GitHub</h1>
                     <a href="//github.com/thezeptar" target="_blank">thezeptar</a>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="text">
-                    <h3>Discord</h3>
+                    <h1>Discord</h1>
                     <a href="//discord.com/users/1094120827601047653" target="_blank">@thezeptar</a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="text">
-                    <h3>Email</h3>
+                    <h1>Email</h1>
                     <a href="mailto:thezeptar@gmail.com">thezeptar@gmail.com</a>
                 </div>
             </div>
@@ -47,26 +47,23 @@
 
         <div class="w-2/5 p-10 bg-white">
             <form action="//formsubmit.co/thezeptar@gmail.com" method="POST">
-                <h2 class="text-3xl text-[#333] font-medium">Send Message</h2>
+                <h2 class="text-3xl text-[#333] font-black">Send Message</h2>
 
                 <div class="inputBox">
-                    <input type="text" name="name" required />
-                    <span>Full Name</span>
+                    <label>Full Name<input type="text" name="name" autocomplete="on" required /></label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="email" required />
-                    <span>Email</span>
+                    <label>Email<input type="text" name="email" autocomplete="on" required /></label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="subject" required />
-                    <span>Title</span>
+                    <label>Message<textarea name="message" required /></label>
                 </div>
+
+                <input type="hidden" name="_next" value="//zeptar.js.cool/#" />
+                <input type="hidden" name="_captcha" value="false" />
+
                 <div class="inputBox">
-                    <textarea name="message" required />
-                    <span>Type your message...</span>
-                </div>
-                <div class="inputBox">
-                    <input class="w-[100px] bg-[#00bcd4] text-white border-none cursor-pointer p-2.5 text-lg" type="submit" name="" value="Send" />
+                    <input class="w-[100px] bg-[#005875] text-white border-none cursor-pointer p-2.5 text-lg" type="submit" name="" value="Send" />
                 </div>
             </form>
         </div>
@@ -100,8 +97,8 @@
         font-weight: 300;
     }
 
-    .text h3 {
-        font-weight: 500;
+    .text h1 {
+        font-weight: bold;
         color: #00bcd4;
     }
 
@@ -109,6 +106,7 @@
         position: relative;
         width: 100%;
         margin-top: 10px;
+        font-weight: bold;
     }
 
     .inputBox input,
@@ -120,17 +118,6 @@
         border-bottom: 2px solid #333;
         outline: none;
         resize: none;
-    }
-
-    .inputBox span {
-        position: absolute;
-        left: 0;
-        padding: 5px 0;
-        font-size: 16px;
-        margin: 10px 0;
-        pointer-events: none;
-        transition: 500ms;
-        color: #666;
     }
 
     .inputBox input:focus ~ span,
