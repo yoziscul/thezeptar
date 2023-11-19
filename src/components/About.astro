@@ -1,17 +1,23 @@
 <section id="about">
-    <h1>HI<span>!</span></h1>
-    <h2>Here's <span>who I am</span> and <span>what I do.</span></h2>
+    <div class="about-container">
+        <h1>HI<span>!</span></h1>
+        <h2>This is <span>who I am</span> and <span>what I do.</span></h2>
 
-    <div class="about-buttons">
-        <button type="button" class="about-button">RESUME</button>
-        <button type="button" class="about-button">PROJECTS</button>
-    </div>
+        <div class="about-buttons">
+            <a href="/#"><button type="button" class="about-button">HOME</button></a>
+            <a href="/#contact"><button type="button" class="about-button">CONTACT</button></a>
+        </div>
 
-    <div class="about-text">
-        <p>
-            Hello! I'm a full-stack developer with a solid two years of experience under my belt. My toolkit includes Node.js, JavaScript, Astro, and TypeScript, and I specialize in crafting efficient and dynamic applications. Currently, I'm on a learning journey to master the C programming language, delving into system-level programming and enhancing my understanding of computer architecture. If
-            you have any questions or want to chat about development, feel free to reach out!
-        </p>
+        <div class="about-text">
+            <p>
+                Hello! I'm a full-stack developer with a solid two years of experience under my belt.
+                My toolkit includes Node.js, JavaScript, Astro, and TypeScript, and I specialize in
+                crafting efficient and dynamic applications. Currently, I'm on a learning journey to
+                master the C programming language, delving into system-level programming and enhancing
+                my understanding of computer architecture. If you have any questions or want to chat
+                about development, feel free to reach out!
+            </p>
+        </div>
     </div>
 </section>
 
@@ -19,18 +25,26 @@
     #about {
         background-color: #c6efb5;
         z-index: 1;
-        display: flex;
         position: relative;
-        height: 73vh;
+        min-height: 65vh;
+    }
+
+    .about-container {
+        position: relative;
+        top: 40px;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 5rem;
-        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 5rem;
+        display: flex;
     }
 
     #about h1 {
         font-size: 7rem;
+        font-weight: bolder;
     }
 
     #about h1 span {
@@ -75,7 +89,21 @@
     .about-text p {
         font-size: 17px;
         font-weight: 600;
-        padding: .5rem;
         opacity: .9;
+    }
+
+    @media screen and (max-width: 412px) {
+        .about-container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .about-buttons {
+            flex-direction: column;
+        }
+
+        .about-button:nth-child(1) {
+            margin-bottom: 10px;
+        }
     }
 </style>
