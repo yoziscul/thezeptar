@@ -1,0 +1,81 @@
+<section id="about">
+    <h1>HI<span>!</span></h1>
+    <h2>Here's <span>who I am</span> and <span>what I do.</span></h2>
+
+    <div class="about-buttons">
+        <button type="button" class="about-button">RESUME</button>
+        <button type="button" class="about-button">PROJECTS</button>
+    </div>
+
+    <div class="about-text">
+        <p>
+            Hello! I'm a full-stack developer with a solid two years of experience under my belt. My toolkit includes Node.js, JavaScript, Astro, and TypeScript, and I specialize in crafting efficient and dynamic applications. Currently, I'm on a learning journey to master the C programming language, delving into system-level programming and enhancing my understanding of computer architecture. If
+            you have any questions or want to chat about development, feel free to reach out!
+        </p>
+    </div>
+</section>
+
+<style>
+    #about {
+        background-color: #c6efb5;
+        z-index: 1;
+        display: flex;
+        position: relative;
+        height: 73vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5rem;
+        text-align: center;
+    }
+
+    #about h1 {
+        font-size: 7rem;
+    }
+
+    #about h1 span {
+        color: #dd2d4a;
+    }
+
+    #about h2 {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+    #about h2 span {
+        background-color: #dd2d4a;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .about-buttons {
+        display: flex;
+        margin: 2rem 0;
+    }
+
+    .about-button {
+        border: none;
+        font-size: .9rem;
+        border: 2px solid #000;
+        border-radius: 20px;
+        padding: .55rem 0;
+        width: 130px;
+        font-weight: 600;
+        background: transparent;
+        margin: 0 .5rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .about-button:hover {
+        background: #dd2d4a;
+        color: #fff;
+    }
+
+    .about-text p {
+        font-size: 17px;
+        font-weight: 600;
+        padding: .5rem;
+        opacity: .9;
+    }
+</style>

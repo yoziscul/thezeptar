@@ -1,13 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import About from '../components/About.astro';
 import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="Home">
-    <main class="w-full min-h-screen">
-        <header class="h-screen bg-gradient-to-b from-[#022840] to-[#02141f]">
-            <div class="bg-no-repeat fixed min-w-full h-[100%]">
-                <svg class="absolute h-full w-[1515px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 26.67 1543.12 482.98">
+    <main>
+        <header class="home-header">
+            <div class="home-container">
+                <svg class="home-tools" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 26.67 1543.12 482.98">
                     <defs>
                         <linearGradient id="linear-gradient" x1="-52.379" y1="24.203" x2="-52.691" y2="24.819" gradientUnits="objectBoundingBox">
                             <stop offset="0" stop-color="#114a8b"></stop>
@@ -127,7 +129,7 @@ import Contact from '../components/Contact.astro';
                 
                 <div class="stars"></div>
 
-                <svg class="w-[45em] -translate-x-2/4 absolute left-[50vw] top-[150px] max-[800px]:w-[90vw]" width="780.22" height="419.24" viewBox="0 0 925.22 459.24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="home-name" width="780.22" height="419.24" viewBox="0 0 925.22 459.24" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="a" x1=".88" x2=".015" y1=".5" y2=".579">
                             <stop stop-color="#02d8ff" offset={0}></stop>
@@ -149,7 +151,7 @@ import Contact from '../components/Contact.astro';
                             fill="url(#a)"
                         />
 
-                        <text class="text-lg tracking-[.280em]" transform="translate(675 563)" fill="#fff">DEVELOPER—PROGRAMMER—DESIGNER—GAMER</text>
+                        <text class="home-text">DEVELOPER—PROGRAMMER—DESIGNER—GAMER</text>
 
                         <g transform="translate(-456.96 -450.17)" xmlns="http://www.w3.org/2000/svg">
                             <path transform="translate(-105.68 -276.56)" d="m1812.5 1315.4a1.686 1.686 0 1 1-1.664 1.686 1.674 1.674 0 0 1 1.664-1.686z" fill="#f2f2f2"></path>
@@ -270,12 +272,38 @@ import Contact from '../components/Contact.astro';
                 </svg>
             </div>
         </header>
-
+ 
+        <About />
         <Contact />
     </main>
 </Layout>
 
 <style>
+    .home-header {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #022840, #02141f);
+    }
+
+    .home-container {
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .home-tools {
+        position: absolute;
+        height: 100%;
+        width: 1515px;
+    }
+
+    .home-text {
+        font-size: 18px;
+        letter-spacing: .280em;
+        transform: translate(675px, 563px);
+        fill: #fff;
+    }
+
     .stars {
         width: 2px;
         height: 2px;
@@ -294,6 +322,14 @@ import Contact from '../components/Contact.astro';
             403px 873px #fff, 638px 1326px #fff, 904px 1683px #fff, 1897px 220px #fff, 1302px 673px #fff, 287px 1644px #fff, 1868px 169px #fff, 1191px 1456px #fff, 957px 744px #fff, 1447px 73px #fff, 1834px 1436px #fff, 1198px 1652px #fff, 1289px 266px #fff, 58px 168px #fff, 1347px 1258px #fff, 1663px 141px #fff, 1781px 544px #fff, 1512px 1467px #fff, 688px 209px #fff, 1568px 152px #fff;
     }
 
+    .home-name {
+        transform: translate(-50%);
+        width: 45em;
+        position: absolute;
+        left: 50%;
+        top: 150px;
+    }
+
     @keyframes animateStars {
         0%,
         100%,
@@ -307,6 +343,12 @@ import Contact from '../components/Contact.astro';
 
         75% {
             transform: rotate3d(-1, 1, 0, -30deg);
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .home-name {
+            width: 90%;
         }
     }
 </style>
