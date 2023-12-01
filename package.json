@@ -7,10 +7,10 @@
         "build": "astro build"
     },
     "dependencies": {
-        "@astrojs/sitemap": "^1.4.0",
-        "@astrojs/vercel": "^2.4.0",
-        "astro": "^1.9.2",
-        "astro-compress": "^2.0.15",
-        "astrojs-service-worker": "^0.0.8"
+        "@astrojs/sitemap": "^3.0.3",
+        "@astrojs/vercel": "^5.2.0",
+        "astro": "^3.6.4",
+        "astro-compress": "^2.2.3",
+        "astrojs-service-worker": "^1.1.0"
     }
 }
