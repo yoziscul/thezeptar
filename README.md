@@ -1,42 +1,13 @@
-<div align="center">
-    <p>
-        <a href="https://zeptar.js.cool"><img src="./assets/zeptar.png" width="500px" /></a>
-    </p>
-    <p>
-        <a href="https://youtube.com/@thezeptar"><img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
-        <a href="https://discord.com/users/1094120827601047653"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
-        <a href="https://reddit.com/user/thezeptar"><img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" /></a>
-        <br />
-        <a href="https://github.com/Zepvil"><img src="https://komarev.com/ghpvc/?username=Zepvil&color=00469c&style=for-the-badge&label=Profile%20Views" alt="Profile Views" /></a>
-    </p>
+![Discord Profile](https://discord.c99.nl/widget/theme-3/1094120827601047653.png)
+
+### TL;DR?
+
+Hey, I'm Zeptar. I've been a full-stack developer for about 2 years. My primary tools of choice include Node.js, JavaScript, Astro, and TypeScript. My current learning journey is centered on acquiring proficiency in the C programming language.
 
 ---
 
-##### ⭐ About Me
+Hey there, I'm Zeptar, a seasoned full-stack developer with a passion for crafting digital solutions. Over the past couple of years, I've developed my skills across various technologies, specializing in Node.js, JavaScript, Astro, and TypeScript. These tools have been my trusty companions as I've navigated through numerous projects, from backend to front-end logic.
 
-I've been a full-stack developer for about 2 years. My primary tools of choice include Node.js, JavaScript, Astro, and TypeScript. My current learning journey is centered on acquiring proficiency in the C programming language.
+Currently, I'm on an exciting learning journey focused on mastering the C programming language. With its efficiency and versatility, C opens up new experiences for me. Programming with low-level optimizations, enriching my toolkit and broadening my understanding of computer science fundamentals makes it a way easier journey throughout the coding process.
 
----
-
-##### ⚡ Tools / Apps
-
-![Tools](./assets/tools.svg)
-
----
-
-##### 🚀 Projects
-
-<div id="projects">
-        <img width="47px" src="./assets/cognifyr.png" alt="Cognifyr"></img>
-        &nbsp;
-        <a href="https://github.com/thezeptar/thezeptar"><img width="47px" src="./assets/portfolio.png" alt="Portfolio"></img></a>
-        &nbsp;
-        <a href="https://github.com/keita-sama/spud.js"><img width="47px" src="./assets/spud.js.png" alt="Spud.js"><img></a>
-        &nbsp;
-        <a href="https://github.com/ambushjs/ambush"><img width="47px" src="./assets/ambush.png" alt="Ambush"></img></a>
-        &nbsp;
-        <a href="https://github.com/ambushjs/image"><img width="47px" src="./assets/image.png" alt="image"></img></a>
-        &nbsp;
-        <a href="https://github.com/ambushjs/bot"><img width="47px" src="./assets/bot.png" alt="bot"></img></a>
-    </div>
-</div>
+Whether you're seeking a friend to share insights with or require assistance on a challenging coding problem, don't hesitate to reach out to me on Discord or any other platform.
