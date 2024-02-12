@@ -2,7 +2,7 @@
 
 ### TL;DR?
 
-Hey, I'm Zeptar. I've been a full-stack developer for about 2 years. My primary tools of choice include Node.js, JavaScript, Astro, and TypeScript. My current learning journey is centered on acquiring proficiency in the C programming language.
+Hey, I'm Zeptar. I've been a full-stack developer for about 2 years. My current learning journey is centered on acquiring proficiency in the C programming language. I also like making animations and designs on Blender, and most of it I post it on my YouTube channel.
 
 ---
 
